@@ -1,0 +1,43 @@
+--------------------------------------------------------------------------------
+v0.01 : 2:a januari 2015
+
+    * Projekt skapat!
+
+--------------------------------------------------------------------------------
+v1.0 : 3:e januari 2015
+
+    * Version 1.0 - första fungerande versionen.
+
+--------------------------------------------------------------------------------
+v1.01 : 5:e januari 2015
+
+    * plang tillåter nu tilldelning av andra tal än noll, men genererar då en
+      varning. Anledningen är helt enkelt att det är mer praktiskt. Att inte
+      kunna tilldela noll är en artificiell begränsning som bara leder till att
+      man får kopiera och klistra in en hel mängd rader för att få det värdet
+      man vill på en variabel. Istället förenklar vi detta och tillåter alla
+      naturliga tal, men då med en varning.
+
+--------------------------------------------------------------------------------
+v1.03 : 6:e januari 2015
+
+    * plang skiljer inte längre på gemener och versaler i variabelnamn och
+      nyckelord.
+
+--------------------------------------------------------------------------------
+v1.04 : 9:e januari 2015
+
+    * Nytt kommando: -syncheck som enbart kontrollerar syntaxen för fel.
+    * Nytt kommando: -asm som enbart genererar assembly-x86-kod.
+
+--------------------------------------------------------------------------------
+v1.05 : 13:e januari 2015
+
+    * Diverse optimeringar.
+    * Omstrukturerad källkod.
+
+--------------------------------------------------------------------------------
+v1.06 : 16:e januari 2015
+
+    * Omskriven tokeniserare. Snabbare och snyggare!
+    * Egna strängfunktioner.

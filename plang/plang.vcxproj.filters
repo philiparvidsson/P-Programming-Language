@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{93ff6271-08db-40e1-bf38-a035007f8852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples">
+      <UniqueIdentifier>{99c4d149-520e-45ff-b62f-15eda36dd679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fasm">
+      <UniqueIdentifier>{147d8106-1c7a-4876-abdd-47f470753a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{a7113709-9aa1-4d9b-93fa-1cf7db909d0e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="docs\changelog.txt">
+      <Filter>docs</Filter>
+    </Text>
+    <Text Include="docs\todo.txt">
+      <Filter>docs</Filter>
+    </Text>
+    <Text Include="examples\add.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\divide.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\errors.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\factorial.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\fibonacci.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\gcd.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\max.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\multiply.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\sum_to.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="license.txt" />
+    <Text Include="examples\sqrt.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\42.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\binary.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="examples\pow.p">
+      <Filter>examples</Filter>
+    </Text>
+    <Text Include="fasm\license.txt">
+      <Filter>fasm</Filter>
+    </Text>
+    <Text Include="examples\cos.p">
+      <Filter>examples</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\plang.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\array.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ast.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\syntax.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\debug.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vm.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\io.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tokenizer.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\asm.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\string.c">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\debug.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\array.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ast.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\syntax.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vm.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\io.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tokenizer.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\asm.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\buildnum.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\string.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\plang.pdf">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="examples\rt_error.p">
+      <Filter>examples</Filter>
+    </None>
+    <None Include="fasm\fasm.exe">
+      <Filter>fasm</Filter>
+    </None>
+    <None Include="fasm\fasm.pdf">
+      <Filter>fasm</Filter>
+    </None>
+    <None Include="build\prebuild.bat">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+ATT GÖRA:
+
+    *1. Skriv om hela vm.c  (4:e januari 2015)
+    *2. Skriv om ast.c  (11:e januari 2015)
+    *3. Kom på bättre sätt att skriva ut syntax-träd.  (12:e januari 2015)
+    *4. Skriv klart readme-dokumentet som pdf.  (10:e januari 2015)
+    *5. Möjlighet att skriva in värden i exe-filer.  (10:e januari 2015)
+    *7. Gör språket okänsligt för gemener och versaler.  (5:e januari 2015)
+    *8. Fixa tokeniseraren så den inte räknar varje enskild bokstav som en egen
+        token.  (6:e januari 2015)
+
+--------------------------------------------------------------------------------
+IDÉER:
+
+    *1. STEP-funktion  (10:e januari 2015)
+
+       En funktion som tillåter att man stegar sig igenom programmet för att se
+       hur de olika variablerna påverkas, steg för steg.
+
+    *2. EXE-generering  (5:e januari 2015)
+
+       Möjlighet att kompilera koden till körbara exe-filer som läser in input
+       ex. via en visuell input-ruta och meddelar resultatet med hjälp av en
+       meddelanderuta.
+
+    3. Stöd för pekare
+
+       Pekare skulle kunna tillåtas genom ex: @X1 := 0, vilket då skulle
+       innebära X<X1> := 0. Dvs om X1 innehåller värdet 3, så sätts X3 till 0.
+
+    4. Funktioner
+
+       Stöd för funktioner som används precis som SUCC och PRED:
+
+       X1 := ADD(X2, X3)
+
+       PROC ADD(L1, L2)
+           ...
+       END
+
+       Där L* är lokala variabler (på stacken).
