@@ -41,3 +41,10 @@ v1.06 : 16:e januari 2015
 
     * Omskriven tokeniserare. Snabbare och snyggare!
     * Egna strängfunktioner.
+
+--------------------------------------------------------------------------------
+v1.10 : ??????
+
+    * Diverse buggfixar.
+    * Förfinad kod här och där.
+    * Lite småoptimeringar här och där.

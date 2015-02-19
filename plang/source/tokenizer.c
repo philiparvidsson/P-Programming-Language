@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------------------
  * File: tokenizer.c
  * Created: January 2, 2015
- * Last changed: January 14, 2015
+ * Last changed: February 19, 2015
  *
  * Author(s): Philip Arvidsson (philip@philiparvidsson.com)
  *
@@ -130,8 +130,7 @@ void Tok_Tokenize(const char* src, Array* tokens) {
          * Förmodligen tilldelning. (:=)
          *--------------------------------------------------*/
         case ':':
-            c = *src;
-            if (c == '=') {
+            if (*src == '=') {
                 tok.type = PTOK_ASSIGN;
                 src++; col++;
             }
@@ -141,8 +140,7 @@ void Tok_Tokenize(const char* src, Array* tokens) {
          * Förmodligen ekvivalenstest. (!=)
          *--------------------------------------------------*/
         case '!':
-            c = *src;
-            if (c == '=') {
+            if (*src == '=') {
                 tok.type = PTOK_EQ_TEST;
                 src++; col++;
             }

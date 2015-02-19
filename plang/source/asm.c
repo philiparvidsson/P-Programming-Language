@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------------------
  * File: asm.c
  * Created: January 5, 2015
- * Last changed: January 12, 2015
+ * Last changed: February 19, 2015
  *
  * Author(s): Philip Arvidsson (philip@philiparvidsson.com)
  *
@@ -535,7 +535,6 @@ static void WriteSectData(FILE* fp) {
             ""                                                       "\n"
             "kernel_table:"                                          "\n"
             "  ExitProcess dd RVA _ExitProcess"                      "\n"
-            "  GetLastError dd RVA _GetLastError"                    "\n"
             "  dd 0"                                                 "\n"
             ""                                                       "\n"
             "user_table:"                                            "\n"
@@ -558,8 +557,6 @@ static void WriteSectData(FILE* fp) {
             ""                                                       "\n"
             "  _ExitProcess dw 0"                                    "\n"
             "  db 'ExitProcess', 0"                                  "\n"
-            "  _GetLastError dw 0"                                   "\n"
-            "  db 'GetLastError', 0"                                 "\n"
             ""                                                       "\n"
             "  _CreateWindowExA dw 0"                                "\n"
             "  db 'CreateWindowExA', 0"                              "\n"
@@ -666,8 +663,8 @@ Bool Asm_GenerateCode(const AST_Node* root, const char* file_name,
 
     Code_Info ci;
     
-    ci.enable_optimizations   = optimize;
-    ci.label_counter          = 0;
+    ci.enable_optimizations = optimize;
+    ci.label_counter        = 0;
 #ifdef DEBUG
     ci.enable_source_comments = TRUE;
 #else

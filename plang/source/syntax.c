@@ -1,12 +1,15 @@
 /*------------------------------------------------------------------------------
  * File: syntax.c
  * Created: January 3, 2015
- * Last changed: January 14, 2015
+ * Last changed: February 19, 2015
  *
  * Author(s): Philip Arvidsson (philip@philiparvidsson.com)
  *
  * Description:
- *   Funktioner för syntax-analys av P-tokens.
+ *   Funktioner för syntax-analys av P-tokens. Den här modulen står för syntax-
+ *   analys, generering av felmeddelanden, m.m. Syftet är att kunna verifiera
+ *   (den syntaktiska) korrekheten hos en angiven P-kod (i form av en mängd
+ *   tokens).
  *
  * Changes:
  *   * Kör numer Str_Duplicate() för alla strängar i felmeddelanden, så att man
@@ -612,7 +615,7 @@ static void CheckSyntax(int* index, const Array* tokens, Array* errors,
                 CheckInt(errors, source, tok);
 
                 char* s = tok->value;
-                while (s && (*s != '\0')) {
+                while (s && *s) {
                     if (*(s++) != '0') {
                         // Tilldelning av något annat än noll.
                         WarnAssignNonZero(errors, source, tok);
@@ -668,7 +671,7 @@ static void CheckSyntax(int* index, const Array* tokens, Array* errors,
 
             // Se till att vi testar mot värdet noll.
             char* s = tok->value;
-            while (s && (*s != '\0')) {
+            while (s && *s) {
                 if (*(s++) != '0') {
                     // Ogiltigt försök att testa mot något annat värde än noll.
                     ErrLoopTestAgainstNonZero(errors, source, tok);
@@ -833,7 +836,7 @@ void Syn_PrintError(const Syntax_Error* err) {
         char c = *(source++);
         if (c=='\r' || c=='\n' || c=='\0')
             break;
-        printf("%c", c);
+        putchar(c);
     }
 
     printf("\n");

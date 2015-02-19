@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------------------
  * File: common.h
  * Created: January 3, 2015
- * Last changed: January 14, 2015
+ * Last changed: February 19, 2015
  *
  * Author(s): Philip Arvidsson (philip@philiparvidsson.com)
  *
@@ -15,6 +15,7 @@
  *   * Programversion ändrad till 1.05.
  *   * Skapade buildnum.h och inkluderade i den här filen.
  *   * Programversion ändrad till 1.06.
+ *   * Programversion ändrad till 1.10.
  *----------------------------------------------------------------------------*/
 
 #ifndef COMMON_H_
@@ -54,7 +55,7 @@
  * Description:
  *   Programversionen.
  *------------------------------------*/
-#define PLANG_PROGRAM_VERSION "1.06 (build "                        \
+#define PLANG_PROGRAM_VERSION "1.10 (build "                        \
                               EXPAND_AND_STRINGIFY(PLANG_BUILD_NUM) \
                               ")"
 
@@ -73,7 +74,7 @@
 #endif
 
 /*--------------------------------------
-* Constant: EXPAND_AND_STRINGIFY
+* Macro: EXPAND_AND_STRINGIFY
 *
 * Description:
 *   Expanderar argumentet om det är ett makro, och omger resultatet med
@@ -82,7 +83,7 @@
 #define EXPAND_AND_STRINGIFY(s) STRINGIFY(s)
 
 /*--------------------------------------
- * Constant: STRINGIFY
+ * Macro: STRINGIFY
  *
  * Description:
  *   Gör en sträng av argumentet genom att omge det med citationstecken.
@@ -93,38 +94,12 @@
  * TYPES
  *----------------------------------------------*/
 
-//------------------------------------------------------------------------------
-// OBS! Kodsnutten nedan är från prof. Eric Roberts bibliotek, genlib.h.
-
-/*
+/*--------------------------------------
  * Type: Bool
- * ----------
- * This type has two values, FALSE and TRUE, which are equal to 0
- * and 1, respectively.  Most of the advantage of defining this type
- * comes from readability because it allows the programmer to
- * provide documentation that a variable will take on only one of
- * these two values.  Designing a portable representation, however,
- * is surprisingly hard, because many libraries and some compilers
- * define these names.  The definitions are usually compatible but
- * may still be flagged as errors.
- */
-#ifdef THINK_C
-     typedef int Bool;
-#else
-#    ifdef TRUE
-#        ifndef Bool
-#            define Bool int
-#        endif
-#    else
-#        ifdef Bool
-#            define FALSE 0
-#            define TRUE  1
-#        else
-             typedef enum { FALSE, TRUE } Bool;
-#        endif
-#    endif
-#endif
-
-//------------------------------------------------------------------------------
+ *
+ * Description:
+ *   Boolesk typ för sant/falskt-variabler eller s.k. flaggor.
+ *------------------------------------*/
+typedef enum { FALSE, TRUE } Bool;
 
 #endif // COMMON_H_

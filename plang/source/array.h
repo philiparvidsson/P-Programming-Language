@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------------------
  * File: array.h
  * Created: January 2, 2015
- * Last changed: January 9, 2015
+ * Last changed: February 19, 2015
  *
  * Author(s): Philip Arvidsson (philip@philiparvidsson.com)
  *
@@ -80,7 +80,7 @@ void Array_Free(Array* array);
  *------------------------------------*/
 INLINE_HINT
 void* Array_GetElemPtr(const Array* array, int i) {
-    ASSERT(0 <= i && i < array->num_elems)
+    ASSERT(0 <= i && i < array->num_elems);
     return (char*)array->elems + (i * array->elem_size);
 }
 

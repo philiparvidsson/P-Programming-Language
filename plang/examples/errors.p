@@ -23,6 +23,6 @@ PROGRAM (X1 X2)        # Fel 1: Komma saknas mellan X1 och X2.
     WHILE X1 != 0 DO
     END                # Varning 2: Tom loop.
     WHILE X3 != 0 DO   # Varning 3: Loop-variabeln modifieras inte.
-        X999999 := 0     # Fel 4: Ogiltig variabel.
+        X999999 := 0   # Fel 4: Ogiltig variabel.
     END
 RESULT (X1             # Fel 5: Höger parentes saknas.
