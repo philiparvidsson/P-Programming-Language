@@ -250,7 +250,7 @@ static Bool ExpectToken2(Array* errors, const char* source, const P_Token* tok,
     else if (expected2 == PTOK_INT)   { str2 = "integer";                }
     else                              { str2 = Tok_GetString(&tmp_tok2); }
 
-    sprintf(buf, "expected %s or %s, but got %s", str1, str2,
+    sprintf(buf, "expected %s or %s but got %s", str1, str2,
             Tok_GetString(tok));
 
     error.text       = Str_Duplicate(buf);
@@ -309,7 +309,7 @@ static Bool ExpectToken3(Array* errors, const char* source, const P_Token* tok,
     else if (expected3 == PTOK_INT)   { str3 = "integer";                }
     else                              { str3 = Tok_GetString(&tmp_tok3); }
 
-    sprintf(buf, "expected %s, %s or %s, but got %s", str1, str2, str3,
+    sprintf(buf, "expected %s or %s or %s but got %s", str1, str2, str3,
             Tok_GetString(tok));
 
     error.text       = Str_Duplicate(buf);
