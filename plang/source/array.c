@@ -74,7 +74,7 @@ void* Array_AddElem(Array* array, const void* elem) {
 /*--------------------------------------
  * Function: Array_Free()
  * Parameters:
- *   array  Den array till vilken vi ska lägga ett element.
+ *   array  Den array som ska avallokeras.
  *
  * Description:
  *   Släpper en array ur minnet.
