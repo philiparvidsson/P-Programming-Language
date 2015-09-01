@@ -342,7 +342,7 @@ static void WriteProcs(FILE* fp) {
     //   1: Index på inputvariabeln.
     //
     // Description:
-    //   Visar en input-ruta så att användaren kan skriva in ett helta. Retur-
+    //   Visar en input-ruta så att användaren kan skriva in ett heltal. Retur-
     //   värdet lagras i EAX-registret.
     //
     //   Anropa på följande vis:
