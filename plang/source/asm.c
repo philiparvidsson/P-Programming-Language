@@ -519,14 +519,14 @@ static void WriteProcs(FILE* fp) {
 }
 
 /*--------------------------------------
- * Function: WriteSectData()
+ * Function: WriteSectIdata()
  * Parameters:
  *   fp  Filen som koden ska skrivas till.
  *
  * Description:
- *   Skriver sektionen '.data' till den specificerade filen.
+ *   Skriver sektionen '.idata' till den specificerade filen.
  *------------------------------------*/
-static void WriteSectData(FILE* fp) {
+static void WriteSectIdata(FILE* fp) {
     fprintf(fp, "section '.idata' import data readable writeable"    "\n"
             ""                                                       "\n"
             "  dd 0, 0, 0, RVA kernel_name, RVA kernel_table"        "\n"
@@ -587,14 +587,14 @@ static void WriteSectData(FILE* fp) {
 }
 
 /*--------------------------------------
- * Function: WriteSectIdata()
+ * Function: WriteSectData()
  * Parameters:
  *   fp  Filen som koden ska skrivas till.
  *
  * Description:
- *   Skriver sektionen '.idata' till den specificerade filen.
+ *   Skriver sektionen '.data' till den specificerade filen.
  *------------------------------------*/
-static void WriteSectIdata(FILE* fp) {
+static void WriteSectData(FILE* fp) {
     fprintf(fp, "section '.data' data readable writeable"    "\n"
                 ""                                           "\n"
                 "  _Vars             rd %d"                  "\n"
