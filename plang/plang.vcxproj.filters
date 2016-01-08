@@ -156,4 +156,7 @@
       <Filter>build</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\plang.png" />
+  </ItemGroup>
 </Project>

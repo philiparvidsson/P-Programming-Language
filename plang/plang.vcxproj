@@ -128,6 +128,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\plang.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{67AF2EDE-99AD-466D-9393-95B36E3B22CC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
