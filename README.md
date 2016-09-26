@@ -16,6 +16,3 @@ Don't forget to take a look at the examples! Anything calculable can be done in 
 * Compilation to stand-alone executables
 
 <img src="plang/images/plang.png" alt="" />
-
-**Philip Arvidsson**<br/>
-*University of Borås, Sweden*
