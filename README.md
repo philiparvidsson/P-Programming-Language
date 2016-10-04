@@ -9,7 +9,7 @@ Don't forget to take a look at the examples! Anything calculable can be done in 
 **Features:**
 
 * Abstract Syntax Tree generation
-* Virtual Machine for running P programs
+* Virtual Machine for running and debugging P programs
 * Assembly x86 output
 * Compilation to stand-alone executables
 
