@@ -9,7 +9,7 @@ Unfortunately, the documentation and source comments are entirely in Swedish. In
 
 *Don't forget to take a look at the examples! Anything calculable can be done in P since it's Turing complete - a good (and somewhat amazing!) example of this is the [cosine calculator](plang/examples/cos.p) (using [Taylor series](https://en.wikipedia.org/wiki/Taylor_series)).*
 
-**Features:**
+### Features
 
 * Syntax error checking
 * Abstract syntax tree generation
@@ -18,3 +18,11 @@ Unfortunately, the documentation and source comments are entirely in Swedish. In
 * Compilation to stand-alone Windows PE-format executables (run your P programs natively!)
 
 <img src="plang/images/plang.png" alt="" />
+
+### Building
+
+Follow the instructions below to build and run plang:
+
+#### Windows
+
+Open the project in Microsoft Visual Studio and run it.
