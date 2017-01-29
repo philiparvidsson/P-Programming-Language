@@ -6,7 +6,7 @@ The **plang** compiler was a pastime project of mine when I wanted to learn how 
 
 Unfortunately, the documentation and source comments are entirely in Swedish. Interested in a translation? Drop me a message!
 
-*Don't forget to take a look at the examples! Anything calculable can be done in P since it's turing complete - a good (and somewhat amazing!) example of this is the [cosine calculator](plang/examples/cos.p) (using [Taylor series](https://en.wikipedia.org/wiki/Taylor_series)).*
+*Don't forget to take a look at the examples! Anything calculable can be done in P since it's Turing complete - a good (and somewhat amazing!) example of this is the [cosine calculator](plang/examples/cos.p) (using [Taylor series](https://en.wikipedia.org/wiki/Taylor_series)).*
 
 **Features:**
 
