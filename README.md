@@ -9,7 +9,7 @@ Unfortunately, the documentation and source code comments are mostly in Swedish.
 
 *Don't forget to take a look at the examples! Anything calculable can be done in P since it's Turing complete - a good (and somewhat amazing!) example of this is the [cosine calculator](plang/examples/cos.p) (using [Taylor series](https://en.wikipedia.org/wiki/Taylor_series)).*
 
-### [Click her for documentation](plang/docs/plang.pdf) (in Swedish)
+### [Click her for documentation](plang/docs/plang.pdf) (Swedish)
 
 ### Features
 
