@@ -1,7 +1,5 @@
 ## What is the P (SUCC / PRED) programming language and plang?
 
-[![Gratipay](https://img.shields.io/gratipay/user/philiparvidsson.svg)](https://gratipay.com/~philiparvidsson/)
-
 P (also known as *the Simple Programming Language*) is a theoretical, trivial programming language—based on the
 Unbounded Register Machine of Shepherdson and Sturgis (JACM 10, 1963)—usually introduced to the students during the introductory undergraduate courses in computer science. Although the language is extremely simple, it is still [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness), which means that anything calculable *can* be calculated with a P program.
 
